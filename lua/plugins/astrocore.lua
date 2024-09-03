@@ -86,6 +86,9 @@ return {
           function() require("notify").dismiss() end,
           desc = "Hide Notification",
         },
+        ["<Leader>fw"] = {
+          function() require("telescope.builtin").live_grep() end,
+        },
         ["<Leader>s"] = { ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", desc = "Subsitute on Current Word" },
         ["<Leader>wq"] = { ":wq<Enter>", desc = "Save and Quit" },
         ["<C-a>"] = { "gg<S-v>G", desc = "Select All" },

@@ -40,7 +40,7 @@ return {
       ["textDocument/signatureHelp"] = false,
     },
     servers = {
-      "pyright",
+      -- "pyright",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -50,8 +50,15 @@ return {
     -- customize how language servers are attached
     handlers = {
       -- a function without a key is simply the default handler, functions take two parameters, the server name and the configured options table for that server
-      -- function(server, opts) require("lspconfig")[server].setup(opts) end
-
+      -- function(server, opts) require("lspconfig")[server].setup(opts) end,
+      -- pyright = function(_, opts)
+      --   require("lspconfig").pyright.setup {
+      --     cmd = { "node", "/opt/homebrew/lib/node_modules/pyright/langserver.index.js", "--stdio" },
+      --     filetypes = { "python" },
+      --     root_dir = function(fname) return vim.loop.cwd() end,
+      --     settings = opts.settings or {},
+      --   }
+      -- end,
       -- the key is the server that is being setup with `lspconfig`
       -- rust_analyzer = false, -- setting a handler to false will disable the set up of that language server
       -- pyright = function(_, opts) require("lspconfig").pyright.setup(opts) end -- or a custom handler function can be passed

@@ -8,9 +8,9 @@ return {
   -- ThePrimeagen Plugins
   "ThePrimeagen/vim-be-good",
   "ThePrimeagen/harpoon",
+  "nvim-lua/plenary.nvim",
 
   -- Other
-  "nvim-lua/plenary.nvim",
   "mbbill/undotree",
   "andweeb/presence.nvim",
   {

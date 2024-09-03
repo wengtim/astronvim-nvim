@@ -6,7 +6,7 @@ return {
   "AstroNvim/astrocommunity",
   -- Pack
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.typescript" },
@@ -27,7 +27,6 @@ return {
   { import = "astrocommunity.color.transparent-nvim" },
   -- Motion
   { import = "astrocommunity.motion.leap-nvim" },
-  -- { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.nvim-surround" },
   -- Other
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },

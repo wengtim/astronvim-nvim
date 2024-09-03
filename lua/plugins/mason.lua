@@ -30,6 +30,8 @@ return {
     opts = {
       ensure_installed = {
         "python",
+        "pyright",
+        "basedpyright",
         -- add more arguments for adding more debuggers
       },
     },
